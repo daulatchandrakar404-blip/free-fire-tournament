@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>DKS Free Fire Tournament</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">🎮 DKS परिवार</div>
+
+    <nav>
+      <a href="#home">होम</a>
+      <a href="#tournaments">टूर्नामेंट</a>
+      <a href="#rules">नियम</a>
+      <a href="#contact">कॉन्टैक्ट</a>
+    </nav>
+  </header>
+
+ 
+<!-- LOGIN / REGISTER -->
+<section class="auth-box" id="login">
+  <h2>🔐 LOGIN / REGISTER</h2>
+
+  <input
+    type="tel"
+    id="mobile"
+    placeholder="📱 मोबाइल नंबर"
+    maxlength="10"
+  >
+
+  <input
+    type="password"
+    id="password"
+    placeholder="🔒 पासवर्ड"
+  >
+
+  <button onclick="registerDemo()">
+    📝 REGISTER
+  </button>
+
+  <button onclick="loginDemo()">
+    🔐 LOGIN
+  </button>
+
+  <p id="auth-msg"></p>
+</section>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+    <div class="small-title">🔥 DAILY FREE FIRE TOURNAMENT</div>
+
+    <h1>DKS Free Fire</h1>
+    <h2>TOURNAMENT</h2>
+
+    <p>खेलो • जीतो • आगे बढ़ो 🏆</p>
+
+    <div class="hero-buttons">
+
+      <button class="deposit-btn" onclick="openUPI()">
+        💰 DEPOSIT करें
+      </button>
+
+      <button class="telegram-btn" onclick="openTelegram()">
+      💸 withdrawal
+      </button>
+      
+      <a href="https://t.me/आपका_टेलीग्राम_लिंक" target="_blank" class="telegram-btn">
+  📲 TELEGRAM GROUP JOIN
+      </a>
+      
+     <div
+
+  </section>
+
+
+  <!-- STATS -->
+  <section class="stats">
+
+    <div>
+      <strong>₹30</strong>
+      <span>Entry Fees</span>
+    </div>
+
+    <div>
+      <strong>₹35</strong>
+      <span>Winning</span>
+    </div>
+
+    <div>
+      <strong>8 AM</strong>
+      <span>Starting Time</span>
+    </div>
+
+    <div>
+      <strong>12 PM</strong>
+      <span>Ending Time</span>
+    </div>
+
+  </section>
+
+
+  <!-- TOURNAMENTS -->
+  <section class="tournaments" id="tournaments">
+
+    <div class="section-title">
+      🔥 LIVE EVENTS
+    </div>
+
+    <h2>आज के टूर्नामेंट</h2>
+
+    <p class="subtitle">
+      अपना पसंदीदा Free Fire Tournament चुनें
+    </p>
+
+
+    <div class="cards">
+
+      <!-- CARD 1 -->
+      <div class="card">
+
+        <div class="game-image">🎮</div>
+
+        <span class="status live">● LIVE</span>
+
+        <h3>Bermuda</h3>
+
+        <p>🏆 player 50</p>
+          🚫 match time 8:00 baje se 12:00 baje pm Tak
+
+        <div class="card-info">
+
+          <div>
+            <small>ENTRY</small>
+            <b>₹30</b>
+          </div>
+
+          <div>
+            <small>par kill</small>
+            <b>₹5</b>
+          </div>
+
+        </div>
+
+        <p class="time">⏰ आज सुबह 8:00 AM</p>
+
+        <button onclick="openUPI()">
+          💰 DEPOSIT ₹30
+        </button>
+
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="card">
+
+        <div class="game-image blue">⚡</div>
+
+        <span class="status upcoming">● UPCOMING</span>
+
+        <h3>CUSTOM COURT 2 </h3>
+
+        <p>👑 MATCH TIME 8:00 SE 12:00 Am</p>
+            🚫 room ID password telegram 
+            🚫 par mile ga
+
+        <div class="card-info">
+
+          <div>
+            <small>ENTRY</small>
+            <b>₹30</b>
+          </div>
+
+          <div>
+            <small>WINNING</small>
+            <b>₹55</b>
+          </div>
+
+        </div>
+
+        <p class="time">⏰ 8:00 AM - 12:00 PM</p>
+
+        <button onclick="openUPI()">
+          💰 DEPOSIT ₹30
+        </button>
+
+      </div>
+
+
+      <!-- CARD 3 -->
+      <div class="card">
+
+        <div class="game-image red">🔥</div>
+
+        <span class="status upcoming">● UPCOMING</span>
+
+        <h3>CUSTOM COURT 4 </h3>
+
+        <p>👑 MATCH TIME 8:00 SE 12:00 Am</p>
+            🚫 room ID password telegram 
+            🚫 par mile ga
+
+        <div class="card-info">
+
+          <div>
+            <small>ENTRY</small>
+            <b>₹30</b>
+          </div>
+
+          <div>
+            <small>WINNING</small>
+            <b>₹55</b>
+          <div>
+          
+        </div>
+
+        <p class="time">⏰ 8:00 AM - 12:00 PM</p>
+
+        <button onclick="openUPI()">
+          💰 DEPOSIT ₹30
+        </button>
+
+      </div>
+
+  </section>
+
+
+  <!-- RULES -->
+  <section class="rules" id="rules">
+
+    <h2>📜 Tournament Rules</h2>
+
+    <div class="rule-box">
+      <p>1️⃣ Entry Fee जमा करने के बाद Telegram पर जाएँ।</p>
+      <p>2️⃣ Match Time: <b>8:00 AM से 12:00 PM</b></p>
+      <p>3️⃣ सही UPI payment के बाद ही entry verify करें।</p>
+      <p>4️⃣ गलत जानकारी देने पर entry reject हो सकती है।</p>
+      <p>5️⃣ Tournament की जानकारी Telegram पर दी जाएगी।</p>
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <footer id="contact">
+
+    <h3>🎮 DKS Free Fire Tournament</h3>
+
+    <p>Daily Tournament • Daily Winning 🏆</p>
+
+
+    <div class="steps-box">
+
+  <div class="step step1">
+    <span class="num">1</span>
+    <span>💰 पहले <b>DEPOSIT</b> करो</span>
+  </div>
+
+  <div class="step step2">
+    <span class="num">2</span>
+    <span>📸 उसका <b>SCREENSHOT</b> में भेज दो</span>
+  </div>
+
+  <div class="step step3">
+    <span class="num">3</span>
+    <span>📲 फिर आपको <b>ROOM ID और PASSWORD</b> दिया जाएगा <b>TELEGRAM</b> में</span>
+  </div>
+
+  <div class="step step4">
+    <span class="num">4</span>
+    <span>🎮 उसी Room से <b>TOURNAMENT</b> खेलो</span>
+  </div>
+
+  <div class="step step5">
+    <span class="num">5</span>
+    <span>💸 मैच का <b>WITHDRAW</b> लेने के लिए <b>SCREENSHOT TELEGRAM</b> में upload करें</span>
+  </div>
+
+    </div>
+    
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
