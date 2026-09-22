@@ -9,7 +9,7 @@ function showQR() {
 
   qr.innerHTML =
     '<img src="https://quickchart.io/qr?size=280&text=' +
-    encodeURIComponent("upi://pay?pa=aulatc@ybl&pn=DKS%20Tournament&am=30&cu=INR") +
+    encodeURIComponent("upi://pay?pa=aulatc@ybl&pn=DKS%20Tournament&am=&cu=INR") +
     '" style="width:280px;height:280px;">';
 }
 
