@@ -527,8 +527,21 @@ body:not(.logged-in) .stats {
 @media (max-width: 600px) {
   .tournament-container {
     display: grid !important;
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    gap: 12px !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+    padding: 0 10px !important;
+  }
+
+  .tournament-card {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+}
+@media (max-width: 600px) {
+  .tournament-container {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
   }
 
   .tournament-card {
