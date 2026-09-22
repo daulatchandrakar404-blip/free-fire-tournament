@@ -1,0 +1,538 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #08030f;
+  color: white;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  min-height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 6%;
+  background: #10051c;
+  border-bottom: 1px solid #32134c;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* LOGIN REGISTER */
+
+.auth-box {
+  width: 90%;
+  max-width: 380px;
+  margin: 30px auto;
+  padding: 25px 20px;
+  text-align: center;
+  border-radius: 15px;
+  background: #180022;
+  border: 1px solid #6d168c;
+  box-shadow: 0 0 25px #9d00ff22;
+}
+
+.auth-box h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.auth-box input {
+  display: block;
+  width: 100%;
+  padding: 13px;
+  margin: 12px 0;
+  border: 1px solid #633477;
+  border-radius: 9px;
+  background: #0d0615;
+  color: white;
+  font-size: 15px;
+  outline: none;
+}
+
+.auth-box input:focus {
+  border-color: #d21cff;
+}
+
+.auth-box button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+#auth-msg {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #bfffcf;
+}
+
+/* HERO */
+
+.hero {
+  text-align: center;
+  padding: 65px 20px;
+  background:
+    radial-gradient(circle at center, #49106b, #10031b 55%, #08030f);
+}
+
+.small-title {
+  color: #d875ff;
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 5px;
+}
+
+.hero h2 {
+  font-size: 45px;
+  color: #d21cff;
+  text-shadow: 0 0 25px #b300ff;
+}
+
+.hero p {
+  margin: 20px 0;
+  color: #ccc;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* BUTTONS */
+
+button {
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: bold;
+  background: linear-gradient(90deg, #9d00ff, #e000ff);
+  box-shadow: 0 0 15px #a900ff55;
+}
+
+.deposit-btn {
+  width: auto;
+  min-width: 160px;
+  padding: 12px 20px;
+}
+
+.telegram-btn {
+  display: inline-block;
+  width: auto;
+  padding: 12px 18px;
+  margin-top: 0;
+  border-radius: 9px;
+  text-align: center;
+  text-decoration: none;
+  background: #229ed9;
+  border: none;
+  color: white;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+/* STATS */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: #160823;
+  padding: 25px 5%;
+  text-align: center;
+}
+
+.stats div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.stats strong {
+  color: #dc7cff;
+  font-size: 22px;
+}
+
+.stats span {
+  color: #999;
+  font-size: 12px;
+}
+
+/* TOURNAMENTS */
+
+.tournaments {
+  padding: 65px 6%;
+  text-align: center;
+}
+
+.section-title {
+  color: #d85cff;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.tournaments h2 {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.subtitle {
+  color: #888;
+  margin-top: 8px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 35px;
+}
+
+.card {
+  text-align: left;
+  background: linear-gradient(145deg, #1c082b, #100417);
+  border: 1px solid #36114c;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 0 20px #9d00ff18;
+}
+
+.game-image {
+  height: 125px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #542078, #261035);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 65px;
+  margin-bottom: 15px;
+}
+
+.game-image.blue {
+  background: linear-gradient(135deg, #073a72, #10254b);
+}
+
+.game-image.red {
+  background: linear-gradient(135deg, #7b231b, #421414);
+}
+
+.status {
+  font-size: 10px;
+}
+
+.live {
+  color: #35ff8a;
+}
+
+.upcoming {
+  color: #b7ff76;
+}
+
+.card h3 {
+  margin: 12px 0 8px;
+}
+
+.card p {
+  color: #aaa;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #351343;
+  border-bottom: 1px solid #351343;
+  margin: 15px 0;
+  padding: 12px 0;
+}
+
+.card-info div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card-info small {
+  color: #777;
+}
+
+.card-info b {
+  color: #e278ff;
+  font-size: 18px;
+}
+
+.time {
+  margin-bottom: 15px;
+}
+
+.card button {
+  width: 100%;
+}
+
+/* RULES */
+
+.rules {
+  padding: 55px 7%;
+  background: #10051a;
+  text-align: center;
+}
+
+.rule-box {
+  max-width: 650px;
+  margin: 25px auto 0;
+  text-align: left;
+  background: #190925;
+  border: 1px solid #36114c;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.rule-box p {
+  margin: 12px 0;
+  color: #ccc;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding: 45px 20px;
+}
+
+footer p {
+  color: #888;
+  margin: 10px 0 20px;
+}
+
+/* STEPS */
+
+.steps-box {
+  width: 100%;
+  margin: 25px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.step {
+  min-height: 65px;
+  padding: 12px 18px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  background: #12001f;
+  box-shadow: 0 0 15px rgba(180, 0, 255, .35);
+}
+
+.step .num {
+  min-width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #a900ff;
+  font-size: 21px;
+  font-weight: 900;
+}
+
+.step b {
+  color: #ff2cff;
+  font-weight: 900;
+}
+
+.step1 { border: 2px solid #ff00ff; }
+.step2 { border: 2px solid #00aaff; }
+.step3 { border: 2px solid #00ff55; }
+.step4 { border: 2px solid #ffb000; }
+.step5 { border: 2px solid #ff0066; }
+
+/* LOGIN SE PEHLE TOURNAMENT HIDE */
+
+body:not(.logged-in) #home,
+body:not(.logged-in) #tournaments,
+body:not(.logged-in) #rules,
+body:not(.logged-in) #contact,
+body:not(.logged-in) .stats {
+  display: none !important;
+}
+
+#login {
+  display: block;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  header {
+    padding: 12px 15px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .hero {
+    padding: 45px 15px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero h2 {
+    font-size: 34px;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-buttons .deposit-btn,
+  .hero-buttons .telegram-btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .step {
+    font-size: 16px;
+    padding: 11px 12px;
+  }
+}
+.rules-box {
+  margin: 15px;
+  padding: 15px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid #a000ff;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.rules-box h3 {
+  color: #d000ff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.rules-box p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 6px 0;
+}
+.tournament-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  width: 100%;
+  padding: 0 12px 30px;
+  box-sizing: border-box;
+}
+
+.tournament-card {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.tournament-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+.tournament-card .card-content {
+  padding: 12px;
+}
+
+.tournament-card button {
+  width: 100%;
+  padding: 10px 8px;
+  font-size: 13px;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .tournament-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    padding: 0 10px 25px;
+  }
+
+  .tournament-card img {
+    height: 125px;
+  }
+
+  .tournament-card .card-content {
+    padding: 10px;
+  }
+
+  .tournament-card button {
+    font-size: 11px;
+    padding: 9px 5px;
+  }
+}
+/* MOBILE: 2 TOURNAMENT BOXES IN ONE ROW */
+@media (max-width: 600px) {
+  .tournament-container {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px !important;
+  }
+
+  .tournament-card {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+}
