@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="hi">
 <head>
@@ -65,28 +66,54 @@
 
     <div class="hero-buttons">
 
-      <button class="deposit-btn" onclick="openUPI()">
-        💰 DEPOSIT करें
-      </button>
+      <button class="deposit-btn" onclick="openDepositQR()">
+  💰 DEPOSIT करें
+</button>
+
+<div id="qrPopup" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,.8); z-index:9999; align-items:center; justify-content:center;">
+  <div style="background:#fff; padding:20px; border-radius:15px; text-align:center; width:85%; max-width:350px;">
+    
+    <h2>Scan QR & Pay</h2>
+
+    <div id="qrCode" style="display:flex; justify-content:center; margin:15px 0;"></div>
+
+    <p>QR Scan करके Payment करें</p>
+
+    <button onclick="closeDepositQR()" style="padding:10px 25px;">
+      CLOSE
+    </button>
+
+  </div>
+</div>
 
       <button class="telegram-btn" onclick="openTelegram()">
       💸 withdrawal
       </button>
       
-      <a href="https://t.me/आपका_टेलीग्राम_लिंक" target="_blank" class="telegram-btn">
+      <a href="https://t.me/+06wLobwEy0cxZGFl" target="_blank" class="telegram-btn">
   📲 TELEGRAM GROUP JOIN
-      </a>
-      
-     <div
+   </a>
+<a href="https://t.me/DK_FreeFire_Tournament" target="_blank" class="telegram-btn">
+  🛠️ SERVICE
+</a>
 
-  </section>
+<div class="rules-box">
+  <h3>📌 TOURNAMENT RULES</h3>
+
+  <p>💰 Deposit करने के बाद Payment का Screenshot भेजें।</p>
+  <p>📸 Withdraw लेने के लिए Game का Screenshot भेजना जरूरी है।</p>
+  <p>🔐  Room ID और Password दिया जाएगा</p>
+        
+  <p>                 🚫🤵service button per
+</div>
+</section>
 
 
   <!-- STATS -->
   <section class="stats">
 
     <div>
-      <strong>₹30</strong>
+      <strong>₹20</strong>
       <span>Entry Fees</span>
     </div>
 
@@ -96,12 +123,12 @@
     </div>
 
     <div>
-      <strong>8 AM</strong>
+      <strong>11 PM</strong>
       <span>Starting Time</span>
     </div>
 
     <div>
-      <strong>12 PM</strong>
+      <strong>12 AM</strong>
       <span>Ending Time</span>
     </div>
 
@@ -109,127 +136,217 @@
 
 
   <!-- TOURNAMENTS -->
-  <section class="tournaments" id="tournaments">
+<section class="tournaments" id="tournaments">
 
-    <div class="section-title">
-      🔥 LIVE EVENTS
+  <div class="section-title">
+    🔥 LIVE EVENTS
+  </div>
+
+  <h2>आज के टूर्नामेंट</h2>
+
+  <p class="subtitle">
+    अपना पसंदीदा Free Fire Tournament चुनें
+  </p>
+
+  <div class="cards">
+
+    <!-- CARD 1 -->
+    <div class="card">
+      <div class="game-image">🎮</div>
+
+      <span class="status live"> LIVE</span>
+
+      <h3>Bermuda</h3>
+
+      <p>🏆 Player</p>
+      <p>🚫 Match Time 11:00 PM से 12:00 AM</p>
+
+      <div class="card-info">
+        <div>
+          <small Entry </small>/small>
+          <b>₹20</b>
+        </div>
+
+        <div>
+          <small>BHUEYA KARNE PAR</small>
+          <b>₹100</b>
+        </div>
+      </div>
+
+      <p class="time">⏰ 11:00 PM - 12:00 AM</p>
+
+      <button class="deposit-btn">
+        🎮 JOIN TOURNAMENT
+      </button>
     </div>
 
-    <h2>आज के टूर्नामेंट</h2>
 
-    <p class="subtitle">
-      अपना पसंदीदा Free Fire Tournament चुनें
-    </p>
+    <!-- CARD 2 -->
+    <div class="card">
+      <div class="game-image blue">⚡</div>
 
+      <span class="status upcoming"> UPCOMING</span>
 
-    <div class="cards">
+      <h3>Bermuda</h3>
 
-      <!-- CARD 1 -->
-      <div class="card">
+      <p>👑 Player </p>
+      <p>🚫 Match Time 11:00 PM से 12:00 AM</p>
 
-        <div class="game-image">🎮</div>
-
-        <span class="status live">● LIVE</span>
-
-        <h3>Bermuda</h3>
-
-        <p>🏆 player 50</p>
-          🚫 match time 8:00 baje se 12:00 baje pm Tak
-
-        <div class="card-info">
-
-          <div>
-            <small>ENTRY</small>
-            <b>₹30</b>
-          </div>
-
-          <div>
-            <small>par kill</small>
-            <b>₹5</b>
-          </div>
-
+      <div class="card-info">
+        <div>
+          <small>ENTRY</small>
+          <b>₹50</b>
         </div>
 
-        <p class="time">⏰ आज सुबह 8:00 AM</p>
-
-        <button onclick="openUPI()">
-          💰 DEPOSIT ₹30
-        </button>
-
+        <div>
+          <small>BHUEYA KARNE PAR</small>
+          <b>₹150</b>
+        </div>
       </div>
 
-      <!-- CARD 2 -->
-      <div class="card">
+      <p class="time">⏰ 11:00 PM - 12:00 AM</p>
 
-        <div class="game-image blue">⚡</div>
+      <button class="deposit-btn">
+        🎮 JOIN TOURNAMENT
+      </button>
+    </div>
 
-        <span class="status upcoming">● UPCOMING</span>
 
-        <h3>CUSTOM COURT 2 </h3>
+    <!-- CARD 3 -->
+    <div class="card">
+      <div class="game-image red">🔥</div>
 
-        <p>👑 MATCH TIME 8:00 SE 12:00 Am</p>
-            🚫 room ID password telegram 
-            🚫 par mile ga
+      <span class="status upcoming"> UPCOMING</span>
 
-        <div class="card-info">
+      <h3>Bermuda</h3>
 
-          <div>
-            <small>ENTRY</small>
-            <b>₹30</b>
-          </div>
+      <p>👑 Player</p>
+      <p>🚫 Match Time 11:00 PM से 12:00 AM</p>
 
-          <div>
-            <small>WINNING</small>
-            <b>₹55</b>
-          </div>
-
+      <div class="card-info">
+        <div>
+          <small>ENTRY</small>
+          <b>₹10</b>
         </div>
 
-        <p class="time">⏰ 8:00 AM - 12:00 PM</p>
-
-        <button onclick="openUPI()">
-          💰 DEPOSIT ₹30
-        </button>
-
+        <div>
+          <small>BHUEYA KARNE PAR</small>
+          <b>₹50</b>
+        </div>
       </div>
 
+      <p class="time">⏰ 11:00 PM - 12:00 AM</p>
 
-      <!-- CARD 3 -->
-      <div class="card">
+      <button class="deposit-btn">
+        🎮 JOIN TOURNAMENT
+      </button>
+    </div>
 
-        <div class="game-image red">🔥</div>
 
-        <span class="status upcoming">● UPCOMING</span>
+    <!-- CARD 4 -->
+    <div class="card">
+      <div class="game-image green">🏆</div>
 
-        <h3>CUSTOM COURT 4 </h3>
+      <span class="status upcoming"> UPCOMING</span>
 
-        <p>👑 MATCH TIME 8:00 SE 12:00 Am</p>
-            🚫 room ID password telegram 
-            🚫 par mile ga
+      <h3>Bermuda</h3>
 
-        <div class="card-info">
+      <p>👑 Player 50</p>
+      <p>🚫 Match Time 11:00 PM से 12:00 AM</p>
 
-          <div>
-            <small>ENTRY</small>
-            <b>₹30</b>
-          </div>
-
-          <div>
-            <small>WINNING</small>
-            <b>₹55</b>
-          <div>
-          
+      <div class="card-info">
+        <div>
+          <small>ENTRY</small>
+          <b>₹100</b>
         </div>
 
-        <p class="time">⏰ 8:00 AM - 12:00 PM</p>
-
-        <button onclick="openUPI()">
-          💰 DEPOSIT ₹30
-        </button>
-
+        <div>
+          <small>BHUEYA KARNE PAR</small>
+          <b>₹250</b>
+        </div>
       </div>
 
-  </section>
+      <p class="time">⏰ 11:00 PM - 12:00 AM</p>
+
+      <button class="deposit-btn">
+        🎮 JOIN TOURNAMENT
+      </button>
+    </div>
+
+    <!-- CARD 5 -->
+<div class="card">
+  <div class="game-image blue">⚡</div>
+  <span class="status upcoming"> UPCOMING</span>
+  <h3>custom scot duo</h3>
+  <p>👑 Player</p>
+  <p>🚫 Match Time 11:00 PM से 12:00 AM</p>
+
+  <div class="card-info">
+    <div>
+      <small>ENTRY</small>
+      <b>₹10</b>
+    </div>
+    <div>
+      <small>BHUEYA KARNE PAR</small>
+      <b>₹30</b>
+    </div>
+  </div>
+
+  <p class="time">⏰ 11:00 PM - 12:00 AM</p>
+  <button class="deposit-btn">🎮 VIEW TOURNAMENT</button>
+</div>
+
+
+<!-- CARD 6 -->
+<div class="card">
+  <div class="game-image red">🔥</div>
+  <span class="status upcoming"> UPCOMING</span>
+  <h3>custom one be one</h3>
+  <p>👑 Player 50</p>
+  <p>🚫 Match Time 11:00 PM से 12:00 AM</p>
+
+  <div class="card-info">
+    <div>
+      <small>ENTRY</small>
+      <b>₹5</b>
+    </div>
+    <div>
+      <small>WINNING</small>
+      <b>₹20</b>
+    </div>
+  </div>
+
+  <p class="time">⏰ 11:00 PM - 12:00 AM</p>
+  <button class="deposit-btn">🎮 VIEW TOURNAMENT</button>
+</div>
+
+
+<!-- CARD 7 -->
+<div class="card">
+  <div class="game-image green">🏆</div>
+  <span class="status upcoming"> UPCOMING</span>
+  <h3>Bermuda</h3>
+  <p>👑 Player</p>
+  <p>🚫 Match Time 11:00 PM से 9:00 AM</p>
+
+  <div class="card-info">
+    <div>
+      <small>ENTRY</small>
+      <b>₹10</b>
+    </div>
+    <div>
+      <small>PER KIL</small>
+      <b>₹3</b>
+    </div>
+  </div>
+
+  <p class="time">⏰ 11:00 PM - 12:00 AM</p>
+  <button class="deposit-btn">🎮 VIEW TOURNAMENT</button>
+</div>
+    
+  </div>
+</section>
+
 
 
   <!-- RULES -->
